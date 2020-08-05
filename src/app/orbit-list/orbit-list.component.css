@@ -30,3 +30,11 @@ th, td {
 .warning-style {
     background-color: rgba(255, 0, 0, 0.2);
  }
+
+ .alternateColor {
+     background-color: rgba(107, 212, 103, 0.2)
+ }
+
+ tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }

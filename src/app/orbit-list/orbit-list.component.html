@@ -1,5 +1,5 @@
 <h3>Orbit Report</h3>
-<table>
+<table class="zebra">
    <tr class="header-row">
       <th (click) = "sort('name')" class="sortable">Name</th>
       <th (click) = "sort('type')" class="sortable">Type</th>
@@ -9,7 +9,7 @@
    </tr>
    <!-- TODO: put <tr *ngFor=""></tr> here -->
    <tr *ngFor="let satellite of satellites" [class.warning-style]="satellite.shouldShowWarning()">
-       <td>{{ satellite.name }}</td>
+       <td >{{ satellite.name }}</td>
        <td >{{ satellite.type }}</td>
        <td>{{ satellite.operational }}</td>
        <td>{{ satellite.orbitType }}</td>
